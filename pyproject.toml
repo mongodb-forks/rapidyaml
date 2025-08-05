@@ -1,9 +1,30 @@
+[project]
+name = "rapidyaml"
+dynamic = [
+    "version",
+    "description",
+    "readme",
+    "license",
+    "requires-python",
+    "authors",
+    "dependencies"
+]
+
+[tool.setuptools_scm]
+
 [build-system]
+build-backend = "setuptools.build_meta"
 requires = [
-         "setuptools>=42",
-         "setuptools_scm[toml]>=3.4",
-         "setuptools-git",
-         "wheel",
-         "ninja",
-         "cmake_build_extension",
-         "swig"]
+    "cmake~=4.0.3",
+    "cmake-build-extension~=0.6.1",
+    "gitdb~=4.0.12",
+    "GitPython~=3.1.45",
+    "ninja~=1.11.1.4",
+    "packaging~=25.0",
+    "setuptools-git~=1.2",
+    "setuptools-scm~=7.1.0",
+    "smmap~=5.0.2",
+    "swig~=4.3.1",
+    "tomli~=2.2.1",
+    "typing_extensions~=4.14.1"
+]
